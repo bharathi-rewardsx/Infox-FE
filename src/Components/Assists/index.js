@@ -47,6 +47,7 @@ export default function Assists() {
                 const regex = /{"data": "(.*?)"}/g; // Regex to match the data values
                 let match;
 
+                
                 while ((match = regex.exec(text)) !== null) {
                     fullMessage += match[1] + ' '; // Concatenate the matched values
                 }
